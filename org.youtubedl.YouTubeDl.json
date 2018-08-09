@@ -51,8 +51,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ffmpeg.org/releases/ffmpeg-3.3.tar.xz",
-                    "sha256": "599e7f7c017221c22011c4037b88bdcd1c47cd40c1e466838bc3c465f3e9569d"
+                    "url": "https://www.ffmpeg.org/releases/ffmpeg-4.0.2.tar.xz",
+                    "sha256": "a95c0cc9eb990e94031d2183f2e6e444cc61c99f6f182d1575c433d62afb2f97"
                 }
             ]
         },
@@ -67,8 +67,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pypi.python.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz",
-                    "sha256": "09f243e1a7b461f654c26a725fa373211bb7ff17a9300058b205c61658ca940d"
+                    "url": "https://files.pythonhosted.org/packages/69/81/52b68d0a4de760a2f1979b0931ba7889202f302072cc7a0d614211bc7579/pip-18.0.tar.gz",
+                    "sha256": "a0e11645ee37c90b40c46d607070c4fd583e2cd46231b1c06e389c5e814eed76"
                 }
             ]
         },
@@ -83,8 +83,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pypi.python.org/packages/d4/0c/9840c08189e030873387a73b90ada981885010dd9aea134d6de30cd24cb8/virtualenv-15.1.0.tar.gz",
-                    "sha256": "02f8102c2436bb03b3ee6dede1919d1dac8a427541652e5ec95171ec8adbc93a"
+                    "url": "https://files.pythonhosted.org/packages/33/bc/fa0b5347139cd9564f0d44ebd2b147ac97c36b2403943dbee8a25fd74012/virtualenv-16.0.0.tar.gz",
+                    "sha256": "ca07b4c0b54e14a91af9f34d0919790b016923d157afda5efdde55c96718f752"
                 }
             ]
         },
@@ -99,8 +99,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://pypi.python.org/packages/38/e3/4e3bbc6cdc7a51030c5e3a130c056f6e5fd78f12793f7797f0ccf092b2e3/youtube_dl-2017.5.18.1.tar.gz",
-                    "sha256": "b4876a526191bd7264fcee9cb08d9de921dbfe823852cc9c343e5fb031ffad08"
+                    "url": "https://files.pythonhosted.org/packages/75/3e/bab63662d6696f2d1062cca208fcf4bb3cfa4b514f28e24533e22f141e11/youtube_dl-2018.8.4.tar.gz",
+                    "sha256": "b26a6e0379ae6300c5fca3b610e89473577eaeb4e559877bfe81f6035f9e12f9"
                 }
             ]
         }
