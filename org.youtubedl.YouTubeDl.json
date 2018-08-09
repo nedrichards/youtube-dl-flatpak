@@ -23,11 +23,14 @@
         /* Keep system terminal mappings */
         "--filesystem=/etc/inputrc:ro"
     ],
-    "cleanup": [ "/cache",
-                 "/share/aclocal",
-                 "/lib/systemd",
-                 "*.la", "*.a" ],
-    "build-options" : {
+    "cleanup": [
+        "/cache",
+        "/share/aclocal",
+        "/lib/systemd",
+        "*.la",
+        "*.a"
+    ],
+    "build-options": {
         "cflags": "-O2 -g",
         "cxxflags": "-O2 -g",
         "env": {
@@ -36,31 +39,31 @@
         }
     },
     "modules": [
-	{
-		"name": "ffmpeg",
-		"cleanup": [ "/include", "/lib/pkgconfig", "/share" ],
-		"config-opts": [
-                        "--enable-shared",
-                        "--disable-static",
-                        "--enable-gnutls",
-                        "--disable-doc"
-		],
-		"sources": [
-			{
-				"type": "archive",
-				"url": "https://ffmpeg.org/releases/ffmpeg-3.3.tar.xz",
-				"sha256": "599e7f7c017221c22011c4037b88bdcd1c47cd40c1e466838bc3c465f3e9569d"
-			}
-		]
-	},
+        {
+            "name": "ffmpeg",
+            "cleanup": [ "/include", "/lib/pkgconfig", "/share" ],
+            "config-opts": [
+                "--enable-shared",
+                "--disable-static",
+                "--enable-gnutls",
+                "--disable-doc"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://ffmpeg.org/releases/ffmpeg-3.3.tar.xz",
+                    "sha256": "599e7f7c017221c22011c4037b88bdcd1c47cd40c1e466838bc3c465f3e9569d"
+                }
+            ]
+        },
         {
             "name": "pip",
- 	    "buildsystem": "simple",
-	    "ensure-writable": ["/lib/python*/site-packages/easy-install.pth"],
-	    "build-commands": [
-		"python3 setup.py build",
-		"python3 setup.py install --prefix=/app"
-		],
+            "buildsystem": "simple",
+            "ensure-writable": ["/lib/python*/site-packages/easy-install.pth"],
+            "build-commands": [
+                "python3 setup.py build",
+                "python3 setup.py install --prefix=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -69,14 +72,14 @@
                 }
             ]
         },
-	{
+        {
             "name": "virtualenv",
-	    "buildsystem": "simple",
-	    "ensure-writable": ["/lib/python*/site-packages/easy-install.pth"],
-	    "build-commands": [
-		"python3 setup.py build",
-		"python3 setup.py install --prefix=/app"
-		],
+            "buildsystem": "simple",
+            "ensure-writable": ["/lib/python*/site-packages/easy-install.pth"],
+            "build-commands": [
+                "python3 setup.py build",
+                "python3 setup.py install --prefix=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -85,14 +88,14 @@
                 }
             ]
         },
-	{
+        {
             "name": "youtube-dl",
-	    "buildsystem": "simple",
-	    "ensure-writable": ["/lib/python*/site-packages/easy-install.pth"],
-	    "build-commands": [
-		"python3 setup.py build",
-		"python3 setup.py install --prefix=/app"
-		],
+            "buildsystem": "simple",
+            "ensure-writable": ["/lib/python*/site-packages/easy-install.pth"],
+            "build-commands": [
+                "python3 setup.py build",
+                "python3 setup.py install --prefix=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
